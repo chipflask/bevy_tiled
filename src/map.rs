@@ -187,9 +187,9 @@ impl Default for TiledMapBundle {
 #[derive(Default, Debug)]
 pub struct CreatedMapEntities {
     // maps layer id and tileset_gid to mesh entities
-    created_layer_entities: HashMap<(usize, u32), Vec<Entity>>,
+    pub created_layer_entities: HashMap<(usize, u32), Vec<Entity>>,
     // maps object guid to texture atlas sprite entity
-    created_object_entities: HashMap<u32, Vec<Entity>>,
+    pub created_object_entities: HashMap<u32, Vec<Entity>>,
 }
 
 pub fn process_loaded_tile_maps(
